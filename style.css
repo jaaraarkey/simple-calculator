@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@112.5,100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+  background: #f0f2f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #a0a2ad,
+    #f0f2f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #aaaec1,
+    #f0f2f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#calculator {
+  margin: 1rem auto;
+  background-color: rgb(243, 242, 242);
+  width: 21rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(255, 255, 255, 0.1),
+    0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #fffefe, #fcfbfb);
+}
+#display {
+  width: 100%;
+  height: 7rem;
+  font-family: "Martian mono", Arial, Helvetica, sans-serif;
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: rgb(98, 98, 98);
+  background-color: rgb(244, 244, 244);
+  /* box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.05); */
+  text-align: right;
+  border: none;
+  border-bottom: 1px dotted rgb(225, 215, 246);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  padding: 1.5rem;
+}
+
+button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 1.5rem;
+  font-family: "Martian mono", Arial, Helvetica, sans-serif;
+  color: white;
+
+  /* background: linear-gradient(to bottom, #cacaca, #bfbfbf); */
+
+  box-shadow: 0.5rem 0.5rem 1rem rgba(255, 255, 255, 0.2),
+    0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: rgb(189, 191, 212);
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(153, 154, 172);
+
+  /* background-color: rgb(101, 110, 231); */
+}
+
+button:active {
+    background-color: rgb(133, 133, 148);
+
+  /* background-color: rgb(45, 58, 239); */
+}
+
+.operator {
+  background-color: rgb(157, 157, 157);
+}
+.operator:hover {
+  background-color: rgb(125, 124, 124);
+}
+.operator:active {
+  background-color: rgb(74, 74, 74);
+}
+
+.del {
+  background: #b9adad;
+}
+.del:hover {
+  background: #a09696;
+}
+.del:active {
+  background: #7d7373;
+}
