@@ -23,10 +23,7 @@ This project demonstrates a simple calculator capable of performing basic arithm
 
 ## Setup and Usage
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/simple-calculator.git
-   ```
+1. Clone the repository;
 2. Navigate to the project directory:
    ```bash
    cd simple-calculator
