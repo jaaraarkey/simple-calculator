@@ -1,4 +1,4 @@
-Sure! Here’s a README for your simple calculator project using HTML, CSS, and JavaScript:
+Live demo:  https://jaaraarkey.github.io/simple-calculator/
 
 ```markdown
 # Simple Calculator
